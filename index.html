@@ -2,7 +2,7 @@
     <head>
         <title></title>
         <link rel="stylesheet" href="assets/css/style.css">
-        <!-- <script src="assets/css/game.js" async defer></script> -->
+        <script src="assets/javascript/game.js" async defer></script>
     </head>
     <body>
         <H1>The Psychic Game</H1>
@@ -11,16 +11,16 @@
         <p>Guess what letter I'm thinking of</p>
         
         <!-- (# of times the user has guessed the letter correctly) -->
-        <p>Wins:</p>
+        <p>Wins: <span id="winCount"></span></p>
         
         <!-- (# of times the user has failed to guess the letter correctly after exhausting all guesses) -->
-        <p>Losses:</p>
+        <p>Losses: <span id="loseCount"></span></p>
 
         <!-- (# of guesses left. This will update) -->
-        <p>Guesses Left: </p>
+        <p>Guesses Left: <span id="guessLeft"></span></p>
 
         <!-- (the specific letters that the user typed. Display these until the user either wins or loses.) -->
-        <p>Your Guesses So Far: </p>
+        <p>Your Guesses So Far: <span id="guessSoFar"></span></p>
 
         <!-- When the player wins, increase the Wins counter and start the game over again (without refreshing the page). -->
         
